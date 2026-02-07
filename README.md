@@ -1,5 +1,6 @@
 # fusion-iso-post V1.0
-## Post processor for Autodesk Fusion to Biesse ISO format (for Rover and Multi machines)
+## Post processor for Autodesk Fusion to Biesse ISO format with 5 axis support
+## (for Biesse Rover and Multi CNC machines)
 
 ### Warning
 
