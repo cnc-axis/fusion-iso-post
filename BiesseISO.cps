@@ -1,6 +1,8 @@
 /*
     Post processor for Autodesk Fusion to Biesse ISO format (for Rover and Multi machines)
-    Copyright 2025 cnc-axis
+
+    Copyright 2026 cnc-axis
+
     This code is licensed under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International
     license, with the following additions. By exercising the Licensed Rights in the above license, you accept and 
     agree to be bound by the terms and conditions both in that license and in the Additional Terms below.
@@ -9,14 +11,10 @@
     
     Additional terms:
     
-    1. You agree that none of the output of this post processor will not be run on a physical CNC machine.
-    2. You agree that the output of this postprocessor may only be run in a simulator that is installed on a
-       device such as a desktop or laptop PC that is not part of, or connected to, a physical CNC machine.
-    3. You accept sole responsibility for any loss or damage caused to any party who uses the output of this 
-       post processor that was created by you while using this post processor.
-    4. You agree that the licensor will in no event by liable to you for any loss, damage or injury, including
-    any damage to a physical or virtual CNC machine or workpiece or CNC machine warranty arising from the 
-    use of this post processor.
+    1. You agree that the output of this post processor will not be used to operate a CNC machine.
+    2. You agree that the licensor will in no event by liable to you or any third party for any loss, damage or injury, including
+    any damage to a physical or virtual CNC machine, workpiece, CNC machine warranty arising from the 
+    use of this post processor. 
 */
 
 // Debug settings
