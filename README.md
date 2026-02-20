@@ -4,11 +4,11 @@
 
 ### Warning
 
-This code is for noncommercial study and simulation only. Each model of CNC machine is different and any post processor must be adapted for safe use on your machine, prior to use. See license for details.
+This code is for noncommercial study and simulation only. Use of the output of this post processor to operated a CNC machine is prohibited. Each Biesse CNC machine model is different, and any post processor must be adapted and correctly licensed for safe use on a specific CNC machine. 
 
 ### License
 
-Copyright 2025 cnc-axis
+Copyright 2026 cnc-axis
 
 This code is licensed under the Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International
 license, with the following additions. By exercising the Licensed Rights in the above license, you accept and 
@@ -18,14 +18,10 @@ To view a copy of the CC-BY-NC-ND license, visit https://creativecommons.org/lic
 
 Additional terms:
 
-1. You agree that none of the output of this post processor will not be run on a physical CNC machine.
-2. You agree that the output of this postprocessor may only be run in a simulator that is installed on a
-   device such as a desktop or laptop PC that is not part of, or connected to, a physical CNC machine.
-3. You accept sole responsibility for any loss or damage caused to any party who uses the output of this 
-   post processor that was created by you while using this post processor.
-4. You agree that the licensor will in no event by liable to you for any loss, damage or injury, including
-any damage to a physical or virtual CNC machine or workpiece or CNC machine warranty arising from the 
-use of this post processor.
+1. You agree that the output of this post processor will not be used to operate a CNC machine.
+2. You agree that the licensor will in no event by liable to you or any third party for any loss, damage or injury, including
+any damage to a physical or virtual CNC machine, workpiece, CNC machine warranty arising from the 
+use of this post processor. 
 
 ### Features
 
@@ -35,18 +31,15 @@ use of this post processor.
 - Supports Manual NC commands.
 - Options for controlling vacuum table, dust extractor, workpiece positioning, panel lifting bars and compressed air blower.
 
-### Important notes
+### Known Limitations
 
-This code was developed against a mid-2020s Biesse Rover A, but has not been validated for this machine or other Biesse machines.
-Use of this post processor may risk damage such as collisions - see license for details.
-
-### Limitations
-
+- This code was developed against a mid-2020s Biesse Rover A, but has not been validated for this machine or other Biesse machines. The Rover A had an infinitely rotating C axis, and unwinding of limited-range (eg. -270 to +270 degree) C axes is not supported.
 - The horizontal drill block and drilling cycles using the main spindle are not supported.
 - B axis is hardcoded to -100 to +100 degree range.
 - Metric operations only.
 - Sawing operations are not supported.
 - Drilling operations are hardcoded to retract by 50mm inbetween each drilling operation.
+- The post processor does not generate a [UTENSILI] (tool list). Therefore, the simulator is not able to check in advance for the presence of all tools required by the program. Instead, an error for a missing tool will be occur when the simulator reaches a section of the program which requests the missing tool.
 
 ### Use
 
